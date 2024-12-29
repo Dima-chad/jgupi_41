@@ -1,0 +1,32 @@
+<script>
+let num1 = prompt("შეიყვანეთ პირველი რიცხვი:");
+let num2 = prompt("შეიყვანეთ მეორე რიცხვი:");
+if (isNaN(num1) || isNaN(num2) || num1 === '' || num2 === '') {
+    alert("გთხოვთ, შეიყვანოთ სწორი რიცხვები.");
+} else {
+    num1 = parseFloat(num1);
+    num2 = parseFloat(num2);
+    let operation = prompt("აირჩიეთ ოპერაცია (+, -, *, /):");
+    let result;
+    if (operation === "+") {
+        result = num1 + num2;
+        alert(`შეკრება: ${result}`);
+    } else if (operation === "-") {
+        result = num1 - num2;
+        alert(`გამოკლება: ${result}`);
+    } else if (operation === "*") {
+        result = num1 * num2;
+        alert(`გამრავლება: ${result}`);
+    } else if (operation === "/") {
+        if (num2 === 0) {
+            alert("ნული ვერ იქნება გამყოფი.");
+        } else {
+            result = num1 / num2;
+            alert(`გაყოფა: ${result}`);
+        }
+    } else {
+        alert("არასწორი ოპერაცია. გთხოვთ, აირჩიეთ სწორი ოპერაცია (+, -, *, /).");
+    }
+}
+
+</script>
