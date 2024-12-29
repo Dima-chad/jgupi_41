@@ -1,0 +1,11 @@
+<script>
+    let userInput = prompt("შეიყვანეთ ტექსტი:");
+
+    let result = userInput.length > 140 ? userInput.slice(0, 140) : userInput;
+    
+    alert(result);
+    
+    if (userInput.length > 140) {
+      alert("alert: ტექსტი არ უნდა აღემატებოდეს 140 სიმბოლოს!");
+    }
+    </script>
