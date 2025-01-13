@@ -1,0 +1,26 @@
+<script>
+    let num1 = 10;
+let num2 = 5;
+let operation = "დამატება";
+
+let result;
+
+if (operation === "დამატება") {
+    result = num1 + num2;
+} else if (operation === "გამოკლება") {
+    result = num1 - num2;
+} else if (operation === "გამრავლება") {
+    result = num1 * num2;
+} else if (operation === "გაყოფა") {
+    if (num2 === 0) {
+        result = "შეცდომა: ნულზე გაყოფა შეუძლებელია";
+    } else {
+        result = num1 / num2;
+    }
+} else {
+    result = "შეცდომა: არასწორი ოპერაცია";
+}
+
+console.log(result);
+
+</script>
