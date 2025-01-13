@@ -1,0 +1,21 @@
+<script>
+    let password = 'Group 41 is best'; 
+let attempts = 0; 
+
+while (attempts < 3) {
+    let userInput = prompt('გთხოვთ, შეიყვანეთ პაროლი:'); 
+
+    if (userInput === password) {
+        alert('თქვენი შეყვანილი პაროლი სწორია');
+        break; 
+    } else {
+        attempts++; 
+        alert('პაროლი არასწორია. დარჩენილი ცდების რაოდენობა: ' + (3 - attempts));
+    }
+}
+
+if (attempts === 3) {
+    alert('თქვენ ამოგეწურათ ცდების რაოდენობა'); 
+}
+
+</script>
